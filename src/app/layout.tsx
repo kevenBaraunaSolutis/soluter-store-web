@@ -17,6 +17,10 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
+      <head>
+      <link rel="shortcut icon" href="/favicon.png" />
+      <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/2.0.0/uicons-regular-rounded/css/uicons-regular-rounded.css'/>
+      </head>
       <body className={inter.className}>
         <Header />
         {children}

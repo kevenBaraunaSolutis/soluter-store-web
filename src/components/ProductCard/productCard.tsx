@@ -2,8 +2,11 @@ import { ProductType } from '@/types/products';
 import Image from 'next/image'
 import React from 'react';
 
+interface ProductCardProps {
+    product: ProductType;
+}
 
-const ProductCard = ({ product }: { product: ProductType }) => {
+const ProductCard: React.FC<ProductCardProps> = ({ product }) => {
     return (
         <div key={product.id} className='h-96 w-72 rounded-lg p-7 bg-white m-3 cursor-pointer hover:shadow-md'>
             <Image className='mx-auto p-3' src={product.image} alt={product.name} width={'120'} height={'150'}/>
